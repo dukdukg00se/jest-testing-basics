@@ -79,3 +79,13 @@ describe('Object with empty array', () => {
     expect(arrObj).toHaveProperty('length', 0);
   });
 });
+
+// Use toEqual() matcher to compare properties of object
+test('Object equality', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
